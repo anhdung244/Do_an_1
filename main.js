@@ -18,6 +18,10 @@ function init() {
 
   //Init Object with Geometry and Surface
 
+  var background = getBackgroundAllPoints();
+
+  scene.add(background);
+
   var ObjectOne = getSurface(getGeometry("Box"), getMaterial("Solid"), "Solid"); //tạo bề mặt của vật thể như hình hộp, tam giác...
   ObjectOne.name = "objectOne";
   ObjectOne.castShadow = true;
@@ -340,10 +344,12 @@ function load3Dmodel(path, oldObj, x) {
 }
 
 function getPlane(size) {
+  var textureLoad = new THREE.TextureLoader().load("./plane2.jpg");
   var geometry = new THREE.PlaneGeometry(size, size);
   var material = new THREE.MeshPhongMaterial({
     side: THREE.DoubleSide,
-    color: 0xff0000,
+    color: 0xffcccc,
+    map: textureLoad,
   });
   var mesh = new THREE.Mesh(geometry, material);
   mesh.receiveShadow = true;
@@ -351,10 +357,12 @@ function getPlane(size) {
 }
 
 function getPlane1(size) {
+  var textureLoad = new THREE.TextureLoader().load("./plane.jpg");
   var geometry = new THREE.PlaneGeometry(size, size);
   var material = new THREE.MeshBasicMaterial({
     color: 0xffcccc,
     side: THREE.DoubleSide,
+    map: textureLoad,
   });
   var mesh = new THREE.Mesh(geometry, material);
   return mesh;
@@ -376,7 +384,7 @@ function getGeometry(type) {
       Geometry = new THREE.ConeGeometry(2, 5, 8);
       break;
     case "Cylinder":
-      Geometry = new THREE.CylinderGeometry(1, 1, 4, 4);
+      Geometry = new THREE.CylinderGeometry(1, 1, 7, 16, 1);
       break;
     case "Torus":
       Geometry = new THREE.TorusGeometry(2, 0.5, 8, 100);
@@ -725,6 +733,33 @@ function ResetObject() {
   Container.position.set(0, 0, 0);
   Container.rotation.set(0, 0, 0);
   Container.scale.set(1, 1, 1);
+}
+
+function getBackgroundAllPoints() {
+  const vertices = [];
+
+  for (let i = 0; i < 800000; i++) {
+    const x = THREE.MathUtils.randFloatSpread(2000);
+
+    const y = THREE.MathUtils.randFloatSpread(2000);
+
+    const z = THREE.MathUtils.randFloatSpread(2000);
+
+    vertices.push(x, y, z);
+  }
+
+  const geometry1 = new THREE.BufferGeometry();
+
+  geometry1.setAttribute(
+    "position",
+    new THREE.Float32BufferAttribute(vertices, 3)
+  );
+
+  const material1 = new THREE.PointsMaterial({ color: 0x888888 });
+
+  const points = new THREE.Points(geometry1, material1);
+
+  return points;
 }
 
 var scene, Container, transformControls, lightGUI;
