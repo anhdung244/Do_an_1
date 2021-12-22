@@ -523,17 +523,22 @@ function setGeometry(type) {
       break;
     case 9:
       isModel = true;
-      load3Dmodel("./Model_3D/Diglett.glb", ObjectOne, 40);
+      load3Dmodel("./Model_3D/Diglett.glb", ObjectOne, 80);
       ObjectOne.position.y = 0;
       break;
     case 10:
       isModel = true;
-      load3Dmodel("./Model_3D/strawberry.glb", ObjectOne, 100);
+      load3Dmodel("./Model_3D/strawberry.glb", ObjectOne, 300);
       ObjectOne.position.y = 0;
       break;
     case 11:
       isModel = true;
-      load3Dmodel("./Model_3D/Totoro.glb", ObjectOne, 10);
+      load3Dmodel("./Model_3D/Totoro.glb", ObjectOne, 100);
+      ObjectOne.position.y = 0;
+      break;
+    case 12:
+      isModel = true;
+      load3Dmodel("./Model_3D/McLaren.glb", ObjectOne, 1500);
       ObjectOne.position.y = 0;
       break;
   }
