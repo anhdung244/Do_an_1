@@ -36,6 +36,9 @@ Nếu máy đã có VS Code thì có thể bỏ qua bước này.
 Link tải VS Code [tại đây](https://code.visualstudio.com/).
 Tải và cài đặt VS Code.
 
+
+
+
 ### 3. Cài extensions
 Để có thể chạy source code lên trình duyệt cần cài đặt extension **Live Server** trên kho extension của VS Code.
 1. Mở ứng dụng VS Code
@@ -53,7 +56,9 @@ Sau khi cài đặt github, làm các bước sau để clone source code:
 1. Mở thư mục nơi xác định chứa code.
 2. `Chuột phải -> Git Bash Here`
 3. Dán dòng code sau đây vào Git Bash:
-	git clone https://github.com/anhdung244/Do_an_1.git
+
+	    git clone https://github.com/anhdung244/Do_an_1.git
+	
 4. Chờ đến khi clone xong thì tắt Git Bash.
 
 ## Chạy code
