@@ -533,7 +533,7 @@ function setGeometry(type) {
       break;
     case 11:
       isModel = true;
-      load3Dmodel("./Model_3D/Totoro.glb", ObjectOne, 100);
+      load3Dmodel("./Model_3D/Totoro.glb", ObjectOne, 20);
       ObjectOne.position.y = 0;
       break;
     case 12:
