@@ -12,7 +12,7 @@
 |3|Trần Hoàn Đức Duy|19521434|[hdduytran](https://github.com/hdduytran)|
 
 # Video Demo
-Vì dung lượng file lớn nên nhóm em sẽ đăng lên Youtube. Thầy có thể vào đường dẫn này để xem video demo.
+Vì dung lượng file lớn nên nhóm em sẽ đăng lên Youtube. Thầy có thể vào [đường dẫn này](https://drive.google.com/file/d/16f99jdUOA7xFc6Uv-3AzyuEydahmHDKJ/view?usp=sharing) để xem video demo.
 
 # Cài đặt souce code
 Ở phần này sẽ hướng dẫn cài đặt các công cụ để có thể chạy được source code này.
