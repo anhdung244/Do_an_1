@@ -15,9 +15,8 @@
 Vì dung lượng file lớn nên nhóm em sẽ đăng lên Google Drive. Thầy có thể vào [đường dẫn này](https://drive.google.com/file/d/16f99jdUOA7xFc6Uv-3AzyuEydahmHDKJ/view?usp=sharing) để xem video demo.
 
 # Cài đặt souce code
-Ở phần này sẽ hướng dẫn cài đặt các công cụ để có thể chạy được source code này.
-Để đơn giản hóa, người dùng có thể thực hiện bước cài đặt Trình duyệt web phía bên dưới và vào trực tiếp [đường link này](https://61c2f876d194b057dd91c04d--silly-galileo-598e4e.netlify.app/#) để sử dụng mà không cần cài đặt lại toàn bộ source code theo các bước bên dưới.
-
+- Link sử dụng trực tiếp mà không cần cài đặt source [tại đây](https://61c2f876d194b057dd91c04d--silly-galileo-598e4e.netlify.app/#)
+- Ở phần dưới đây sẽ hướng dẫn cài đặt các công cụ để có thể cài đặt và chạy được source code này.
 
 ## Yêu cầu cơ bản
 
