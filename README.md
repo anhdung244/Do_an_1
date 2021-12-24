@@ -1,6 +1,7 @@
 # Đồ án môn học CS105 - Đồ họa máy tính
 
-Đây là source code đồ án môn học CS105 - Đồ họa máy tính của nhóm em.
+[Đây](https://github.com/anhdung244/Do_an_1/) là source code đồ án môn học CS105 - Đồ họa máy tính của nhóm em.
+Vì đồ source code khá nặng nên tụi em sẽ up source lên github tại link sau: https://github.com/anhdung244/Do_an_1/
 
 **Giáo viên hướng dẫn:**  ThS. Cáp Phạm Đình Thăng
 
